@@ -1,0 +1,189 @@
+
+
+.positioner {
+    max-width:970px;
+    margin: 0 auto;
+}
+
+.main-container {
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.header {
+    background-color: gainsboro;
+    height:75px;
+    width:100%;
+    display:flex;
+}
+.main {
+    background-color: bisque;
+    flex-grow: 1;
+    width: 100%;
+    display:flex;
+}
+.footer {
+    background-color: cadetblue;
+    height: 75px;
+    width: 100%;
+}
+
+  /* Navigation */
+  .navigation {
+      flex:4;
+  }
+
+  .navi {
+    list-style: none;
+    font-weight: bold;
+    height: 120px;
+    margin-top:15px;
+    margin-left: 50px;
+    
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    
+  }
+
+  .navi li {
+    display: block;
+    color: black; 
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    float:left;
+  }
+  .navi a{
+    text-decoration: none;
+    color:black;
+  }
+
+  /* Logo */
+  .logo {
+      flex:1;
+      
+  }
+
+  h1{
+      text-align:center;
+      margin:20px;
+      
+  }
+
+  /* Sidebar and content container layout */
+
+  .sidebar-container {
+      flex:1;
+      border:1px black solid;
+  }
+
+  .content-container {
+      flex:4;
+      display:flex;
+      /* flex-wrap:wrap; */
+      flex-direction: column;
+  }
+  .item-container {
+      display:flex;
+      flex-wrap: wrap;
+      justify-content:space-around;
+  }
+
+  /* Banner */
+  .banner {
+    display:flex;
+    border:1px black solid;
+    margin:40px;
+    height:100px;
+  }
+
+  #baner-text {
+      width: 70%;
+      height: 70%;
+      margin: auto;
+      align-self:center;
+      text-align:center;
+      font-size:4vh;
+      font-size:4vw;
+      color:red;
+  }
+
+  /* Sidebar */
+
+  .ul-sidebar {
+    
+    margin: 30px;
+    font-weight: bold;
+  
+}
+#sidebar-name {
+    margin:30px;
+}
+
+/* Content */
+
+img {
+    width:100%;
+    height:100%;
+}
+
+.item {
+    height:150px;
+    width:120px;
+    display:flex;
+    flex-direction: column;
+    margin:40px;
+    
+}
+.img-div{
+  flex:2;
+}
+
+.text {
+    flex:1;
+    
+}
+.text h4 {
+    margin: 10px;
+}
+
+
+@media(max-width: 720px){
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        height:auto;
+    }
+    .main {
+        flex-direction:column;
+    }
+}
+ 
+@media(max-width: 650px){
+
+     .content-container {
+        flex-direction:row;
+    } 
+
+  
+
+    
+} 
+
+@media(max-width: 820px){
+
+    .item {
+        margin:20px;
+    }
+
+   
+}
