@@ -166,6 +166,10 @@ img {
     .main {
         flex-direction:column;
     }
+
+    #sidebar-name, .ul-sidebar {
+        text-align: center;
+    }
 }
 
 
